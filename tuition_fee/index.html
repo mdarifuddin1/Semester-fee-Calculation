@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semester Tuition Fee Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 align="center" >Primeasia University</h1>
+        <p align="center" >Star Tower, 12 Kemal Ataturk Ave, Dhaka 1213</p>
+        <p align="center" >Summer 2023</p>
+
+    </div>
+    <br>
+    <div class="student">
+        <pre>
+                            Student Name                             : Md Arif Uddin
+                            Student ID                               : 193027042
+                            phone                                    : 01518916473
+                            Program                                  : BSc in Computer Science and Engineering
+    
+          </pre>
+    </div>
+    <h3 align="center">* Taken Courses </h3>
+    <table border="2px " height="300px" width="1200px" align="center">
+        <tr  align="center">
+          <th >Course Code</th>
+          <th >Course Title</th>
+          <th >Credit</th>
+          <th>Remarks</th>
+        </tr>
+        <tr align="center">
+          <td >CSE 411</td>
+          <td >Computer Networks</td>
+          <td >3</td>
+          <td ></td>
+        </tr >
+        <tr  align="center">
+          <td >CSE 403</td>
+          <td >VLSI Design</td>
+          <td >3</td>
+          <td></td>
+        </tr>
+        <tr  align="center">
+            <td>CSE 404</td>
+            <td>VLSI Design Lab</td>
+            <td>1</td>
+            <td></td>
+          </tr>
+          <tr  align="center">
+            <td>CSE 485</td>
+            <td>Internet & Web Technologies</td>
+            <td>3</td>
+            <td></td>
+          </tr>
+          <tr  align="center">
+            <td>CSE 486</td>
+            <td>Internet & Web Technologies Lab</td>
+            <td>1</td>
+            <td></td>
+          </tr>
+          <tr align="center">
+            <td>Total Credit :</td>
+            <td></td>
+            <td>11</td>
+            <td></td>
+
+          </tr>
+      </table>
+      
+  <div class="container">
+    <h1>*Payment</h1>
+    <div class="form-group">
+      <label for="Admission">Admission:</label>
+      <input type="number" id="admission" >
+    </div>
+    <div class="form-group">
+      <label for="credit-hours">Per Credit Cost:</label>
+      <input type="number" id="per-credit" min="1">
+    </div>
+    <div class="form-group">
+      <label for="cost-per-credit">Total Credit:</label>
+      <input type="number" id="total-credit" min="0">
+    </div>
+    <div class="form-group">
+        <label for="Lab-Thesis">Lab Thesis:</label>
+        <input type="number" id="lab-thesis" >
+      </div>
+      <div class="form-group">
+        <label for="Other">Other:</label>
+        <input type="number" id="other" >
+      </div>
+      <div class="form-group">
+        <label for="Re-Regi">Re-Regi:</label>
+        <input type="number" id="regi" >
+      </div>
+      <div class="form-group">
+        <label for="Late">Late :</label>
+        <input type="number" id="late" >
+      </div>
+    <button id="calculate-btn">Total</button>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
